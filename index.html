@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/Lato.css" />
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
     <link rel="stylesheet" href="assets/css/pikaday.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
   </head>
 
   <body>
@@ -18,7 +20,7 @@
     <nav
     class="navbar navbar-expand-lg fixed-top portfolio-navbar gradient navbar-dark">
     <div class="container">
-      <a class="navbar-brand logo" href="#">Emmanuel Arcila</a>
+      <a class="navbar-brand logo" href="index.html">Portafolio</a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -28,20 +30,16 @@
             <a class="nav-link" href="projects-porta.html">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Contacto</a>
+            <a class="nav-link" href="hire-me.html">Contactame</a>
           </li>
         </ul>
-        <!-- Botón para alternar modo claro/oscuro -->
-        <button id="themeToggle" class="btn btn-outline-secondary ms-3">
+        <button id="themeToggle" class="btn btn-secondary ms-3">
           Modo Oscuro
         </button>
       </div>
     </div>
   </nav>
-    
-    <!-- MENÚ: Sección donde va el menú -->
     <main class="page">
-      <!-- ABOUT: Sobre ti, primera impresión -->
 
       <section class="portfolio-block block-intro border-bottom">
         <div class="container">
@@ -57,70 +55,46 @@
             <p>
               Hola! Soy <strong>Emmanuel Arcila</strong> y esta es mi información
             </p>
-            <a href="hire-me.html" class="btn btn-outline-primary">Contactame</a>
+            <div class="container text-center">
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-3 col-sm-6 mb-3">
+                  <a href="https://wa.me/573136418768"
+                     class="btn btn-success btn-sm w-100"
+                     target="_blank">
+                    <i class="icon ion-social-whatsapp"  ></i>
+                    WhatsApp
+                  </a>
+                </div>
           </div class="about-me">
         </div>
       </section>
 
-      <section class="portafolio-block  links">
-        <div class="container text-center">
-          <br>
-          <h2>Enlaces útiles</h2>
-          <div class="heading mb-6">
-          </div>
-          <div class="row justify-content-center">
-            <!--Botón WhatsApp-->
-            <div class="col-md-3 col-sm-6 mb-3">
-              <a href="https://wa.me/573136418768"
-              class="btn btn-success btn-lg w-100"
-              target="_blank">
-              <i class="icon ion-social-whatsapp"></i>
-              WhatsApp
-            </a>
-            </div>
-
-            <!--Botón Google Drive-->
-            <div class="col-md-3 col-sm-6 mb-3">
-              <a href="https://drive.google.com/drive/folders/1HLRDPZe4Z4_wPrxO3rd5ZFpb8dgE2ubd"
-              class="btn btn-primary btn-lg w-100"
-              target="_blank">
-                <i class="icon ion-folder"></i>
-                Certificados
-              </a>
-            </div>
-
-            <!--Botón GitHub-->
-            <div class="col-md-3 col-sm-6 mb-3">
-              <a href="https://github.com/Emm15anuel15"
-              class="btn btn-dark btn-lg w-100"
-              target="_blank">
-              <i class="icon ion-social-github"></i>
-              GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="perfil-profesional" class="portfolio-block cv">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-10 text-center">
-              <h2 class="mb-4">Perfil Profesional</h2>
-              <p>
-                Soy un programador apasionado con experiencia en desarrollo web y software. Me especializo en la creación de soluciones tecnológicas innovadoras, eficientes y accesibles. Mi objetivo es combinar habilidades técnicas y trabajo en equipo para superar desafíos y alcanzar metas. Además, tengo un enfoque continuo hacia el aprendizaje y la mejora personal, destacándome por mi proactividad, liderazgo y adaptabilidad.
-              </p>
-              <p>
-                Con experiencia en tecnologías como <strong>HTML, CSS, JavaScript, PHP, y SQL</strong>, me esfuerzo por construir aplicaciones funcionales que brinden valor real. Mi compromiso es con la excelencia y la mejora constante en cada proyecto que emprendo.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
       <section class="portfolio-block cv">
         <div class="container">
-          <!-- WORK: lugar donde se muestra la experiencia laboral -->
+
+          <section class="portfolio-block cv profile-section">
+            <div class="container">
+              <div class="heading text-center mb-4">
+                <h2>Perfil Profesional</h2>
+              </div>
+              <p class="text-center">
+                Soy un desarrollador de software apasionado por la tecnología, con experiencia en desarrollo web y bases de datos. 
+                Me destaco por mi adaptabilidad, proactividad y compromiso con la entrega de soluciones eficientes y de calidad. Estoy en constante 
+                aprendizaje para perfeccionar mis habilidades y superar nuevos desafíos en el ámbito tecnológico.
+              </p>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-center">
+              <a href="https://drive.google.com/drive/folders/1HLRDPZe4Z4_wPrxO3rd5ZFpb8dgE2ubd" class="btn btn-primary me-3" target="_blank">
+                <i class="bi bi-cloud-fill" style="font-size: 1.5rem;;"></i> Mi Drive - Certificados
+              </a>
+              <a href="https://github.com/Emm15anuel15" class="btn btn-dark" target="_blank">
+                <i class="bi bi-github" style="font-size: 1.5rem;"></i> Mi GitHub
+              </a>
+            </div>
+          </section>
+
+<hr>
            <div class="row-experience group">
             <div class="heading">
               <h2>Experiencia Laboral</h2>
@@ -132,100 +106,279 @@
                   <span class="badge rounded-pill bg-primary">Quipux S.A.S</span>
                 </div>
                 <div class="col-md-6"></div>
-                <span class="text-muted period">oct. 2024  - dic.2024</span>
+                <span class="text-muted period">oct. 2024 - dic. 2024</span>
               </div>
-              <p>Durante mi proceso de formación de grado 11 participe en el semillero de
-               programación con la empresa Quipux, con ellos realice un proceso de
-                formación organizacional con otros 60 compañeros de media técnica, donde
-                pusimos ha prueba algunos de nuestros conocimientos, y también adquirimos nuevas habilidades.
+              <p>
+                Durante mi proceso de formación de grado 11 participé en el semillero de programación con la empresa Quipux, con ellos realicé un proceso de formación organizacional con otros 60 compañeros de media técnica, donde pusimos a prueba algunos de nuestros conocimientos, y también adquirimos nuevas habilidades.
               </p>
+            
+              <div class="row mt-4">
+                <div class="col-md-6">
+                  <h4>Habilidades Técnicas</h4>
+                  <ul>
+                    <li><strong>Lenguajes de Programación:</strong> JavaScript, Python y Java.</li>
+                    <li><strong>Desarrollo Web:</strong> HTML y CSS.</li>
+                    <li><strong>Automatización de Procesos y QA:</strong> Pruebas.</li>
+                    <li><strong>Bases de Datos: </strong>Programación en SQL (MySQL).</li>
+                    <li><strong>Prototipado: </strong>UX/UI.</li>
+                    <li><strong>Frameworks: </strong>Bootstrap.</li>
+                  </ul>
+                </div>
+            
+                <div class="col-md-6">
+                  <h4>Habilidades Blandas</h4>
+                  <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Responsabilidad</li>
+                    <li>Adaptabilidad</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            
             <div class="item">
               <div class="row">
                 <div class="col-md-6">
-                  <h3>Asistente Vitual</h3>
+                  <h3>Asistente Virtual</h3>
                   <span class="badge rounded-pill bg-primary">Natalia Torres</span>
                 </div>
                 <div class="col-md-6"></div>
-                <span class="text-muted period">sep. 2024  - dic.2024</span>
+                <span class="text-muted period">sep. 2024 - dic. 2024</span>
               </div>
-              <p>Durante mi proceso de desempeño de Asistente Virtual me caracterizo por ser una 
-                persona muy puntual y responsable en la entrega de trabajos.
+              <p>
+                Me desempeño como Asistente Virtual donde me caracterizo por ser una persona muy puntual y responsable en la entrega de trabajos.
+                También una persona innovadora a la hora de buscar herramientas eficientes para la realización de informes.
               </p>
-            </div>
-           </div>
+        
+              <div class="row mt-4">
 
-           <!--Habilidades-->
-          <!-- EDUCATION: lugar donde va tu educación escolar y universitaria -->
-           <div class="education group">
-            <div class="heading">
-              <h2 class="text-center">Educación</h2>
+                <div class="col-md-6">
+                  <h4>Habilidades Técnicas</h4>
+                  <ul class="list-unstyled">
+                    <li>Gestión de bases de datos (Power BI)</li>
+                    <li>Dominio de herramientas ofimáticas (Microsoft Office, Google Workspace)</li>
+                    <li>Automatización de procesos de tareas repetitivas</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4>Habilidades Blandas</h4>
+                  <ul class="list-unstyled">
+                    <li>Organización</li>
+                    <li>Puntualidad</li>
+                    <li>Capacidad para trabajar de manera autónoma</li>
+                    <li>Resolución de problemas</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="item">
+          <section>
+            <div class="education group">
+              <div class="heading">
+                <h2 class="text-center">Educación</h2>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3><strong>Bachiller</strong></h3>
+                    <span class="badge rounded-pill bg-success">Institución Educativa PIO XI - SENA</span>
+                  </div>
+                  <div class="col-md-6">
+                    <span class="text-muted period">nov. 27</span>
+                  </div>
+                </div>
+                <p>
+                  Estudiante que se descataco por su sentido de pertenencia, disciplina
+                   y liderazgo, además de su cordialidad y ayuda continua a  profesores y compañeros.
+                </p>
+              </div>
+             </div>
+
+             <div class="item">
               <div class="row">
                 <div class="col-md-6">
-                  <h3>Bachiller Técnico en Sistemas</h3>
-                  <span class="badge rounded-pill bg-success">Institución Educativa PIO XI - SENA</span>
+                  <h3><strong>Técnico en Sistemas</strong></h3>
+                  <span class="badge rounded-pill bg-success">SENA</span>
                 </div>
                 <div class="col-md-6">
                   <span class="text-muted period">nov. 27</span>
                 </div>
               </div>
               <p>
-                Estudiante técnico destacado por mi sentido de pertenencia, disciplina
-                 y liderazgo, además de mi cordialidad y ayuda continua a mis profesores y compañeros.
+                Estudiante técnico destacado por un rendimiento académico sobresaliente, enfocado en la excelencia y en el desarrollo continuo de habilidades técnicas y de liderazgo.
               </p>
-              <p><strong>Logros:</strong></p>
-              <ul>
-                <li>Reconocimiento por Sentido de Pertenencia.</li>
-                <li>Representate de Grupo en varios grados de mi paso por el Colegio.</li>
-                <li>Reconocimiento por Liderazgo.</li>
-                <li>Reconocimiento por Mejor Rendimiento Acádemico./li>
-                <li>Participe varios años como deportista (Natación), representando mi municipio.</li>
-                <li>Participe de un Curso de Programación - Meseta Software en mi municipio (La Unión Antioquia).</li>
-              </ul>
             </div>
            </div>
-          <!-- SKILLS: Lugar donde diras tus habilidades principales -->
-
-
-        <!--Sección de habilidades -->
-<section class="portfolio-block skills">
+          </section>
+<hr>
+<section class="portfolio-block achievements mt-4">
   <div class="container">
     <div class="heading text-center mb-4">
-      <h2>Habilidades</h2>
+      <h2>Logros</h2>
     </div>
-    <div class="row text-center">
-      <div class="col-md-6">
-        <ul class="list-unstyled">
-          <li><h3>Java 8</h3></li>
-          <li><h3>HTML, CSS y JavaScript</h3></li>
-          <li><h3>SQL con MySQL</h3></li>
-          <li><h3>Prototipado</h3></li>
-          <li><h3>UX/UI</h3></li>
-          <li><h3>Automatización de Software</h3></li>
-          <li><h3>Calidad del Software</h3></li>
-        </ul>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card shadow-sm border-light rounded">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Reconocimiento por Liderazgo</strong></h5>
+            <p class="card-text">Recibí este reconocimiento por mi habilidad para guiar a grupos y fomentar un ambiente de colaboración y respeto.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <ul class="list-unstyled">
-          <li><h3>Asertividad</h3></li>
-          <li><h3>Trabajo en equipo</h3></li>
-          <li><h3>Proactividad</h3></li>
-          <li><h3>Responsabilidad</h3></li>
-          <li><h3>Adaptabilidad</h3></li>
-          <li><h3>Comunicación Efectiva</h3></li>
-          <li><h3>Gestión de Tiempo</h3></li>
-        </ul>
+      <div class="col">
+        <div class="card shadow-sm border-light rounded">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Mejor Rendimiento Académico</strong></h5>
+            <p class="card-text">Destacado por obtener los mejores resultados académicos en mi promoción en el colegio PIO XI.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm border-light rounded">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Certificado en Programación</strong></h5>
+            <p class="card-text">Completé con éxito un curso de programación organizado por la Alcaldía de La Unión - Grupo de Desarrolladores Unitenses.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+<hr>
+<section class="portfolio-block projects mt-4">
+  <div class="container">
+    <div class="heading text-center mb-4">
+      <h2>Proyectos Destacados</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card shadow-sm border-light rounded">
+          <img src="assets/img/project1.jpg" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <h5 class="card-title text-center">Proyecto 1</h5>
+            <p class="card-text text-center">Descripción breve del proyecto.</p>
+            <a href="link-del-proyecto-1" class="btn btn-primary w-100" target="_blank">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
 
-<section>
-  <div class="border rounded border-0 contact-info portfolio-info-card">
+      <div class="col">
+        <div class="card shadow-sm border-light rounded">
+          <img src="assets/img/project2.jpg" class="card-img-top" alt="Proyecto 2">
+          <div class="card-body">
+            <h5 class="card-title text-center">Proyecto 2</h5>
+            <p class="card-text text-center">Descripción breve del proyecto.</p>
+            <a href="link-del-proyecto-2" class="btn btn-primary w-100" target="_blank">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm border-light rounded">
+          <img src="assets/img/project3.jpg" class="card-img-top" alt="Proyecto 3">
+          <div class="card-body">
+            <h5 class="card-title text-center">Proyecto 3</h5>
+            <p class="card-text text-center">Descripción breve del proyecto.</p>
+            <a href="link-del-proyecto-3" class="btn btn-primary w-100" target="_blank">Ver Proyecto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="portfolio-block skills mt-4">
+  <div class="container">
+    <div class="heading text-center mb-4">
+      <h2>Habilidades</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card shadow-sm border-light rounded">
+          <div class="card-body">
+            <h5 class="card-title text-center"><strong>Habilidades Técnicas</strong></h5>
+            <ul class="list-unstyled text-center">
+              <li><h6>Java 8</h6></li>
+              <li><h6>HTML, CSS y JavaScript</h6></li>
+              <li><h6>SQL con MySQL</h6></li>
+              <li><h6>Prototipado</h6></li>
+              <li><h6>UX/UI</h6></li>
+              <li><h6>Automatización de Software</h6></li>
+              <li><h6>Calidad del Software</h6></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm border-light rounded">
+          <div class="card-body">
+            <h5 class="card-title text-center"><strong>Habilidades Blandas</strong></h5>
+            <ul class="list-unstyled text-center">
+              <li><h6>Asertividad</h6></li>
+              <li><h6>Trabajo en equipo</h6></li>
+              <li><h6>Proactividad</h6></li>
+              <li><h6>Responsabilidad</h6></li>
+              <li><h6>Adaptabilidad</h6></li>
+              <li><h6>Comunicación Efectiva</h6></li>
+              <li><h6>Gestión de Tiempo</h6></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="portfolio-block hobbies mt-4">
+  <div class="container">
+    <div class="heading text-center mb-4">
+      <h2>Mis Intereses y Hobbies</h2>
+    </div>
     <div class="row">
-      <!-- Información de contacto -->
+      <div class="col-md-4">
+        <div class="hobby-card shadow-sm border-light rounded p-3 mb-3">
+          <h5 class="hobby-title"><strong>Videojuegos 🎮</strong></h5>
+          <p class="hobby-description">Disfruto jugando videojuegos, especialmente los de estrategia y aventuras. Es una excelente forma de relajación y aprendizaje.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="hobby-card shadow-sm border-light rounded p-3 mb-3">
+          <h5 class="hobby-title"><strong>Lectura 📖</strong></h5>
+          <p class="hobby-description">Me encanta leer libros de desarrollo personal, tecnología y ciencia ficción. La lectura es una forma para enriquecer mi mente.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="hobby-card shadow-sm border-light rounded p-3 mb-3">
+          <h5 class="hobby-title"><strong>Tiempo en Familia y Amigos 👨‍👩‍👦</strong></h5>
+          <p class="hobby-description">Disfruto de los momentos de calidad con mis seres queridos, fortaleciendo relaciones y creando recuerdos inolvidables.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="hobby-card shadow-sm border-light rounded p-3 mb-3">
+          <h5 class="hobby-title"><strong>Realizar Deporte 🏊‍♀️</strong></h5>
+          <p class="hobby-description">El deporte es mi forma de mantenerme activo, saludable y enfocado, promoviendo tanto el bienestar físico como mental.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="hobby-card shadow-sm border-light rounded p-3 mb-3">
+          <h5 class="hobby-title"><strong>Estudiar (Autodidacta) 💻</strong></h5>
+          <p class="hobby-description">Soy un apasionado del aprendizaje continuo, siempre buscando expandir mis conocimientos y habilidades de manera autodidacta.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="hobby-card shadow-sm border-light rounded p-3 mb-3">
+          <h5 class="hobby-title"><strong>Viajar ✈</strong></h5>
+          <p class="hobby-description">Viajar me permite conocer nuevas culturas, ampliar mis horizontes y encontrar inspiración en lugares y personas diferentes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section>
+  <div class="container contact-info portfolio-info-card portfolio-block cv profile-section">
+    
+    <div class="row">
       <div class="col-md-6">
         <h2>Información de contacto</h2>
         <div class="row">
@@ -249,15 +402,21 @@
             <i class="icon ion-at icon"></i>
           </div>
           <div class="col-9">
-            <span>mesetasoftware@gmail.com</span>
+            <a href="mesetasoftware@gmail.com" target="_blank">mesetasoftware@gmail.com</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <i class="icon ion-social-instagram icon"></i>
+          </div>
+          <div class="col-9">
+            <a href="https://www.instagram.com/07__emmiarpshez__02" target="_blank">Instagram</a>
           </div>
         </div>
       </div>
-  
-      <!-- Mapa o enlace a ubicación -->
+
       <div class="col-md-6">
         <h2>Ubicación</h2>
-        <!-- Mapa integrado -->
         <div class="embed-responsive embed-responsive-4by3">
           <iframe 
             class="embed-responsive-item" 
@@ -273,12 +432,8 @@
     </div>
   </div>
 </section>
-
-
-<!--HOBBIES: lugar donde escribiras tus hobbies -->
       
     </main>
-    <!-- FOOTER: pie de la página donde va información de contacto -->
 
     <footer class="page-footer py-3 border-top">
       <div class="container my-4">
@@ -295,11 +450,7 @@
       const themeToggleButton = document.getElementById('themeToggle');
       const htmlElement = document.documentElement;
       const navbar = document.getElementById('navbar');
-    
-      // Estado inicial
       let isDarkMode = htmlElement.getAttribute('data-bs-theme') === 'dark';
-    
-      // Actualiza el botón y el estilo del navbar según el estado
       function updateUI() {
         themeToggleButton.textContent = isDarkMode ? 'Modo Claro' : 'Modo Oscuro';
         navbar.classList.toggle('navbar-dark', isDarkMode);
@@ -307,18 +458,13 @@
         navbar.classList.toggle('bg-dark', isDarkMode);
         navbar.classList.toggle('bg-light', !isDarkMode);
       }
-    
-      // Alternar entre temas
       themeToggleButton.addEventListener('click', () => {
         isDarkMode = !isDarkMode;
         htmlElement.setAttribute('data-bs-theme', isDarkMode ? 'dark' : 'light');
         updateUI();
       });
-    
-      // Configuración inicial de la interfaz
       updateUI();
     </script>
-    
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/pikaday.min.js"></script>
